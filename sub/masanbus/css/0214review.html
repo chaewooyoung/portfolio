@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{margin: 0;padding: 0;}
+            .wrap{
+                width: 600px;
+                margin: 100px auto;
+
+            }
+            .menu{
+                display: flex;
+
+            }
+            .menu button{
+                width: 25%;
+                height: 45px;
+                text-align: center;
+                background-color: transparent;
+                border-radius: 5px 5px 0 0;/*왼상 오하*/
+                border: 1px solid turquoise;
+                font-size: 18px;
+                color: turquoise;
+            }
+
+            .menu button:first-child{
+                background-color: turquoise;
+                color: #fff;
+                
+            }
+
+            .con{
+                border: 3px solid turquoise;}
+            
+            .con .box{
+                height: 400px;
+                display: none;
+            }
+            .con .box:first-child{
+                display: block;
+            }
+            .box1{
+                background-color: aquamarine;
+            }
+            .box2{
+                background-color: paleturquoise;
+            }
+            .box3{
+                background-color: cyan;
+            }
+            .box4{
+                background-color: mediumspringgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="menu">
+                <button>MENU1</button>
+                <button>MENU2</button>
+                <button>MENU3</button>
+                <button>MENU4</button>
+            </div><!--menu-->
+            <div class="con">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+            </div><!--con-->
+        </div><!--wrap-->
+        <script src="../../basicjQuery/js/jquery-3.6.0.min.js"></script>
+        <script>
+            $('.menu button').on('click',function(){
+                let i =$(this).index();
+                $('.con').children().eq(i).show().siblings().hide();
+
+                $(this).css({
+                    'backgroundColor' : 'turquoise',
+                    'color' : '#fff'
+                }).siblings().css({
+                    'backgroundColor' : 'transparent',
+                    'color' : 'turquoise'
+                });
+            });
+        </script>
+    </body>
+</html>

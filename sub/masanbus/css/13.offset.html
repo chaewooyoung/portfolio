@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .box1{
+                width: 300px; 
+                height: 450px;
+            }
+            .box2{
+                width: 144px;
+                height: 240px;
+            }
+            .box3{
+                width: 260px;
+                height: 100px;
+
+            }
+            .box4{
+                width: 470px;
+                height: 300px;
+            }
+            .box5{
+                width: 132px;
+                height: 430px;
+            }
+            .box6{
+                width: 76px;
+                height: 76px;
+            }
+
+            div:nth-child(even){background-color: aquamarine;}
+            div:nth-child(odd){background-color: aqua;}
+        
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <script src="../../basicjQuery/js/jquery-3.6.0.min.js"></script>
+        <script>
+            $('div').each(function(){
+                let i = $(this).index();
+                $(this).css({'marginLeft' : 'i*30'})
+                let hig = $(this).height(); 
+                
+            })
+
+            let box1 = $('.box').offset().top;
+            console.log(box1);
+
+            let box2 = $('.box2').offset().top;
+            console.log(box2);
+
+            let box3 = $('.box3').offset().top;
+            console.log(box3);
+
+            let box3 = $('.box4').offset().Left;
+            console.log(box4);
+
+            let box3 = $('.box5').offset().Left;
+            console.log(box5);
+        </script>
+    </body>
+</html>

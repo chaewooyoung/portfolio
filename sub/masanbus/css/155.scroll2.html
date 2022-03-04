@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{margin: 0;
+            padding: 0;
+            }
+            a{ color: inherit;
+            text-decoration: none;}
+            ul{list-style: none;
+                position: fixed;
+                right: 20px;
+                top: 20px;
+                font-size: 18px;
+                display: flex;
+                color: #eee;
+            }
+            li{
+                margin: 0 20px;}
+
+            section{
+                height: 1000px;
+                font-size: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-weight: 900;
+                font-family: Arial;
+            }
+            section:nth-child(1){background-color: darkblue;}
+            section:nth-child(2){background-color: forestgreen;}
+            section:nth-child(3){background-color: crimson;}
+            section:nth-child(4){background-color: dimgray;}
+
+
+            
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Darkblue</li>
+            <li>Forestgreen</li>
+            <li>Crimson</li>
+            <li>Dimgray</li>
+        </ul>
+        <div id="wrap">
+            <section>Darkblue</section>
+            <section>Forestgreen</section>
+            <section>Crimson</section>
+            <section>Dimgray</section>
+        </div>
+
+        <script src="../../basicjQuery/js/jquery-3.6.0.min.js"></script>
+        <script>
+            $('li').on('click',function(){
+
+            // let i = $(this).index();
+            // $('html,body').animate({
+            //     'scrollTop' : i * 1000
+            // });
+
+            let i = $(this).index();
+            let movePoint = $('section').eq(i)
+                        .offset().top;
+
+            $('html, body').animate({
+                'scrollTop' : movePoint
+            });
+            });
+        </script>
+    </body>
+</html>

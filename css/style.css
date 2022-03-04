@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+    
+}
+
+header{
+   height: 120px;
+   border-bottom: 1px solid #fff;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.1);
+   z-index: 1;   
+}
+
+body{
+    height: 3000px;
+}
+
+.hWrap{
+    width: 1200px;
+    position: relative;
+    height: 120px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.gnb{
+    margin-top: 25px;
+    line-height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.gnb li{
+    margin: 0 30px;
+    font-size: 25px;
+    text-indent: 0;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+}
+.gnb li.active{
+    background-color: rgba(153, 0, 255, 0.5);
+    mix-blend-mode: normal;
+    height: 15px;
+    
+}
+
+section::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+button{
+    width: 100px;
+    line-height: 35px;
+    border:2px solid #fff;
+    background-color:rgba(255,255,255,0.4);
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.s1{
+    background-color: #333;
+    height: 100vh;
+    position: relative;
+    
+}
+.s1Wrap{
+    width: 1200px;
+    height: 100vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.s1txt {
+    position: absolute;
+    top:480px;
+    left: 0;
+    font-size: 30px;
+    color: #fff;
+}
+.s1Txt{
+    position: absolute;
+    top: 550px;
+    left: 0px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.s1box{
+    position: absolute;
+    top: 296px;
+    left: 396px;
+}
+
+address{
+    position: absolute;
+    right: 0px;
+    bottom: 35px;
+    font-size: 16px;
+    font-style: inherit;
+    color: #fff;
+}
+
+.s2{
+    background-color: #444;
+    height: 100vh;
+    position: relative;
+}
+
+h2{
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+
+.s2Wrap{
+    width: 1200px;
+    height: 100vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s2box1{
+    width: 294px;
+    height: 338px;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 300px;
+    left: 74px;
+    background-color: transparent;
+}
+
+.s2box2{
+    width: 294px;
+    height: 338px;
+    position: absolute;
+    top: 370px;
+    left: 150px;
+    background-image: url(../images/2s02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s2box3{
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    top: 450px;
+    right: 16px;
+}
+
+.s2box4{
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+
+.s3{
+    background-image: url(../images/s3back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.s3Wrap{
+    width: 1200px;
+    height: 100vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s3Box5{
+    position: absolute;
+    width: 262px;
+    height: 331px;
+    top: 300px;
+    left: 60px;
+}
+
+h3{
+    padding-top: 20px;
+    position: absolute;
+    font-size: 30px;
+    top: 40px;
+    left: 46px;
+    color: #333;
+}
+
+.s3box6 {
+    position: absolute;
+    font-size: 20px;
+    top: 100px;
+    left: 46px;
+    color: #333;
+}
+.s3box6 p{
+    margin-bottom: 5px;
+}
+
+.icon{
+    position: absolute;
+    top: 300px;
+    right: 10px;
+}
+.iconwrap{
+    position: absolute;
+    top: 350px;
+    left: 450px;
+}
+.iconwrap img{
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+
+
+.s4{
+    background-image: url(../images/s4back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    position: relative;
+}
+.s4Wrap{
+    width: 1200px;
+    height: 100vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+.s4Wrap h2{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: 200px;
+    left: 60px;
+}
+
+.con{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+}
+
+.s4box{
+    transition: all 1s;
+    width: 288px;
+    height: 288px;
+    background-color: #fff;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 7px 10px rgba(0,0,0,0.2);
+}
+
+.s4box::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.photo{
+    height: 180px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    transition: all 1s;
+}
+
+.txt{
+    box-sizing: border-box;
+    padding:15px;
+    color: #333;
+}
+
+.txt h4{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.txt p{
+    font-size: 12px;
+    color: #666;
+}
+
+.s4box:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 15px 20px rgba(0,0,0,0.1);
+}
+.s4box:hover .photo img{
+    transform: scale(1.1);
+}
+
+.view{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    display: none;
+}
+
+figure{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+figure img{
+    width: 100%;
+}
+
+.txtBox{
+    position: absolute;
+    color:#fff;
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+}
+
+.s4close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border:0;
+    background-color: transparent;
+    color: #fff;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.closeWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.s5{
+    background-color: #ababab;
+    height: 100vh;
+    position: relative;
+}
+.s5Wrap{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.s5Wrap h2{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+.s5box{
+    width: 31%;
+    
+}
+.s5con{
+    width: 1200px;
+    margin: 260px auto 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.vid{
+    height: 200px;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    
+}
+
+video{
+    width: 100%;
+}
+
+.show{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+figure{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.s5txtBox{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    text-align: center;
+}
+.s5close{
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    font-size: italic;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: underline;
+}
+
+.s5closeWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    background-color: transparent;
+    padding:40px 0;
+}
+
+.s5wrap2{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s5card{
+    width: 31%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.thumb{
+    height: 200px;
+    background-image: url(../images/5syou1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thumb img{
+    width: auto;
+    height: auto;
+}
+
+.s5card .s5txt{
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.key{
+    display: none;
+}
+
+.detail{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+figure{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+}
+
+.s5closeBtn{
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-style: italic;
+    text-decoration: underline;
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+
+.s5closeBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+figure iframe{
+    width: 100%;
+}
+
+.s5context{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    color: #fff;
+}
+
+
+.ls{
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+}
+.rs{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.s6{
+    background-color: #ebebeb;
+    height: 100vh;
+    position: relative;
+}
+
+.s6Wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+.s6Wrap h2{
+    color: #333;
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+
+.s6con{
+    display: flex;
+    justify-content: space-between;
+}
+
+.s6con .box{
+    width: 298px;
+    height: 298px;
+    margin: 350px 20px;
+   background-color: #333;
+}
+.s6 .box a{
+    display: block;
+    height: 100%;
+}
+ .s61{
+    background-image: url(../images/s6s1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boxcar{
+    position: absolute;
+    bottom: 95px;
+    right: 15px;
+}
+
+
+.s7{
+    background-image: url(../images/s702.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.s7Wrap{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.s7Wrap .box{
+
+}
+.s7Wrap h2{
+    color: #333;
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+
+.s7Wrap h4{
+    font-size: 50px;
+    padding-top: 350px;
+    padding-bottom: 30px;
+}
+.s7Wrap p{
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.s7txt{
+    position: absolute;
+    color: #333;
+    font-size: 20px;
+    bottom: 50px;
+    right: 0;
+}
